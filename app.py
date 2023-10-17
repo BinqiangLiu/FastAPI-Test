@@ -1,5 +1,13 @@
 import requests
 import streamlit as st
+from streamlit.components.v1 import html
+
+st.set_page_config(page_title="Open AI Chat Assistant", layout="wide")
+st.subheader("Open AI Chat Assistant: Life Enhancing with AI!")
+
+css_file = "main.css"
+with open(css_file) as f:
+    st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 def call_chatbot_api(query):
     url = 'https://binqiangliu-fastapi-in-docker.hf.space/api/chat'
