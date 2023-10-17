@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-from streamlit.components.v1 import html
+#from streamlit.components.v1 import html
 #from pathlib import Path
 
 st.set_page_config(page_title="Open AI Chat Assistant", layout="wide")
