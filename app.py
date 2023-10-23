@@ -12,6 +12,7 @@ with open(css_file) as f:
 
 def call_chatbot_api(query):
     url = 'https://binqiangliu-fastapi-in-docker.hf.space/api/chat'
+    #url='https://hf-aichat-api.onrender.com/api/chat'
     json_data_for_api = {'user_question': query}
     response = requests.post(url, json=json_data_for_api) 
     result = response.json()
